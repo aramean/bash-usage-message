@@ -22,7 +22,7 @@ help () {
   | sed 'N;s/\n/###/' \
   | sed -n 's/^#@ \(.*\)###\(.*\){.*/\2###\1/p' \
   | column -t -s '###'
-  echo ""
+  echo
 }
 
 # Runs help function if no argument passed.
